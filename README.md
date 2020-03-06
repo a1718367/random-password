@@ -13,4 +13,4 @@ Random Password Generator
 <li>Password is shown in result box</li>
 <li>Previous generated password is shown in previous password display</li>
 <li>Previous generated password is listed as length + pw</li>
-<img src="img/screenshot.PNG" alt="screenshot">
+<img src="img/screenshot.png" alt="screenshot">
