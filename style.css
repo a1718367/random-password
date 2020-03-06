@@ -21,6 +21,15 @@
     overflow-wrap: break-word;   
 }
 
+.pgpwd-container{
+    width: 100%;
+    min-height: 20px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    padding: 1em;   
+    margin-bottom: 1em; 
+    overflow-wrap: break-word;   
+}
 
 footer{
     position:fixed;
