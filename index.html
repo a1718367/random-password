@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+ <nav class="navbar navbar-light">
+     <div class="navbar-brand">Password Generator</div>
+
+ </nav>
+    
+ <main class="container">
+    <div class="row container justify-content-center">
+        <h1>Random Password Generator</h1>
+        <div class="container result-container" id="result">Your New Password</div>
+    </div>
+    <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#mymodal">
+        Start
+      </button>
+
+      <div class="row">
+        <div class="container">
+        <h5>Previous Generated Password</h5>
+        <div class="pgpwd" id="display"></div>
+        </div>
+    </div>
+    
+      <!-- The Modal -->
+      <div class="modal fade" id="mymodal">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+          
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title" id="msg">Password Criteria</h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            
+            <!-- Modal body -->
+            <div class="modal-body">
+              <form>
+                <label for="length">Password Length</label>
+                <input type="number" id="length" min="8" max="128" value="8">
+                <div class = "checkbox">
+                    <label for="lowcase">Lowercase</label>
+                    <input type="checkbox" id="lowcase" name="checkbox"><br>
+                    <label for="upcase">Uppercase</label>
+                    <input type="checkbox" id="upcase" name="checkbox"><br>
+                    <label for="numeric">Numeric</label>
+                    <input type="checkbox" id="numeric" name="checkbox"><br>
+                    <label for="symbols">Symbols</label>
+                    <input type="checkbox" id="symbols" name="checkbox"><br>                    
+                </div>
+                
+
+
+              </form>
+            </div>
+            
+            <!-- Modal footer -->
+            <div class="modal-footer">
+                <button class="btn btn-dark" id="generate" data-dimiss="modal" >Generate</button>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+      
+    </div>
+
+ </main>
+
+
+<script src="script4.js"></script>
+    <footer>
+        <div class="clearfix container-fluid">
+            <span class="float-right">&copy;PSO Co. 2020</span>
+        </div>  
+    </footer>    
+</body>
+</html>

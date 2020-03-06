@@ -1,0 +1,31 @@
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    margin-top: 1%;
+    margin-bottom: 1em;
+    width: 100%;
+    padding: 1em;
+}
+.result-container{
+    width: 100%;
+    min-height: 20px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    padding: 1em;
+    border: grey;
+    border-style: solid;   
+    margin-bottom: 1em; 
+    overflow-x: scroll;
+    overflow-wrap: break-word;   
+}
+
+
+footer{
+    position:fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: right;
+    
+}
