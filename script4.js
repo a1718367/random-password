@@ -45,7 +45,7 @@ document.getElementById("generate").addEventListener("click", function(){
     document.getElementById("msg").style.color = "red";
     event.preventDefault();
     }else{
-
+    document.getElementById("msg").innerHTML = ""
 // Generate user generated pw array based on criteria selected
     // check checkbox array for index with value == true
     // add checkbox array to empty array if value == true
@@ -63,6 +63,9 @@ document.getElementById("generate").addEventListener("click", function(){
     document.getElementById("result").textContent = pw;
     document.getElementById("result").style.color = "black";
     $("#mymodal").modal("hide");
+    $('#mymodal').on('hidden.bs.modal', function () {
+        $(this).find('form').trigger('reset');
+    })
     event.preventDefault();
     display(pw);
     }
