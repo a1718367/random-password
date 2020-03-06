@@ -38,12 +38,12 @@ document.getElementById("generate").addEventListener("click", function(){
     if(isNaN(n) || n < 8 || n > 128){
     document.getElementById("msg").innerHTML = "Enter a number between 8 and 128 inclusive"
     document.getElementById("msg").style.color = "red";
-    event.preventDefault();
+    //event.preventDefault();
     document.getElementById("length").focus();
     }else if (a == false && b == false && c == false && d == false){
     document.getElementById("msg").innerHTML = "Select a criteria"
     document.getElementById("msg").style.color = "red";
-    event.preventDefault();
+    //event.preventDefault();
     }else{
     document.getElementById("msg").innerHTML = ""
 // Generate user generated pw array based on criteria selected
@@ -66,7 +66,7 @@ document.getElementById("generate").addEventListener("click", function(){
     $('#mymodal').on('hidden.bs.modal', function () {
         $(this).find('form').trigger('reset');
     })
-    event.preventDefault();
+    //event.preventDefault();
     display(pw);
     }
     
