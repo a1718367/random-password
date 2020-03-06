@@ -19,8 +19,17 @@ iarr = [arr_l,arr_u,arr_n,arr_s];
 
 document.getElementById("generate").addEventListener("click", function(){
 
-//declare variables
+    $(document).ready(function(){
+        $("#start").click(function(){
+          $("#mymodal").modal("show");
+        });
+        $("#mymodal").on('show.bs.modal', function(){
+            document.getElementById('msg').innerHTML = "";
+        });
+      });
 
+//declare variables
+    
     var n = document.getElementById("length").value;
     var a = document.getElementById("lowcase").checked;
     var b = document.getElementById("upcase").checked;
@@ -64,7 +73,7 @@ document.getElementById("generate").addEventListener("click", function(){
     document.getElementById("result").style.color = "black";
     $("#mymodal").modal("hide");
     $('#mymodal').on('hidden.bs.modal', function () {
-        $(this).find('form').trigger('reset');
+        $(this).find('form').trigger('reset'); 
     })
     //event.preventDefault();
     display(pw);
