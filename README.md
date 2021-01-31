@@ -1,4 +1,5 @@
 Random Password Generator
+
 <h4>User's guide</h4>
 <li>Start by clickiing Start button</li>
 <li>Modal window with password criteria</li>
@@ -13,4 +14,6 @@ Random Password Generator
 <li>Password is shown in result box</li>
 <li>Previous generated password is shown in previous password display</li>
 <li>Previous generated password is listed as length + pw</li>
+<a href="https://a1718367.github.io/random-password/">Launch Generator</a>
+<br>
 <img src="img/screenshot.png" alt="screenshot">
